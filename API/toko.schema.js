@@ -1,17 +1,30 @@
 const mongoose = require("mongoose");
 
 const TokoSchema = new mongoose.Schema({
-    name : {
+    nama_toko : {
         type: String,
+        required : true
+    },
+    nama_penjual : {
+        type: String,
+        required : true
+    },
+    email : {
+        type: String,
+        required : true
+    },
+    password : {
+        type: String,
+        required : true
+    },
+    telepon : {
+        type: Number,
         required : true
     },
     alamat : {
         type: String,
         unique: true,
         required: true
-    },
-    jumlah_produk: {
-        type: Number
     }
 });
 
