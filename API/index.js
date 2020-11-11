@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const apiRoutes = require('./routes');
+const produkRoutes = require('./produk.routes');
+const tokoRoutes = require('./toko.routes');
 const bodyParser = require("body-parser"); 
 
 const app = express();
@@ -13,7 +14,8 @@ mongoose.connection.on("connected", ()=> {
     console.log("mongo berhasil dikoneksikan");
 })
 
-app.use('/restapi', apiRoutes)
+app.use('/toko', tokoRoutes)
+app.use('/produk', produkRoutes)
 
 app.listen(3000, ()=> {
     console.log("server running on port 3000");
