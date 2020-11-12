@@ -6,12 +6,12 @@ const AdminSchema = new mongoose.Schema({
         type: String,
         required : true
     },
-    email : {
+    email_admin : {
         type: String,
         required: true,
         unique: true
     },
-    password : {
+    password_admin : {
         type: String,
         required: true
     }

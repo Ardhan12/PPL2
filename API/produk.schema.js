@@ -2,9 +2,10 @@ const { text } = require("body-parser");
 const mongoose = require("mongoose");
 
 const ProdukSchema = new mongoose.Schema({
-    name : {
+    nama_produk : {
         type: String,
-        required : true
+        required : true,
+        unique: true
     },
     harga : {
         type: Number,

@@ -34,9 +34,9 @@ router.post('/', (req,res)=>{
 router.put('/', (req, res) => {
     const editedQuery = {
       name: req.body.name,
-      passsword: req.body.password
+      password_admin: req.body.password_admin
     }
-    adminModel.update({ email: req.body.email }, editedQuery, (error, admin) => {
+    adminModel.updateOne({ email_admin : req.body.email_admin}, editedQuery, (error, admin) => {
         if (error !== null) {
           res.json({
             message: error.message
@@ -51,7 +51,7 @@ router.put('/', (req, res) => {
 })
     
 router.delete('/', (req, res) => {
-    adminModel.deleteOne({ email: req.body.email }, (error, admin) => {
+    adminModel.deleteOne({ email_admin: req.body.email_admin }, (error, admin) => {
         if (error !== null) {
             res.json({
             message: error.message

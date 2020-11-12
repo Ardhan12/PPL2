@@ -33,10 +33,12 @@ router.post('/', (req,res)=>{
 
 router.put('/', (req, res) => {
     const editedQuery = {
-      name: req.body.name,
-      stok_produk: req.body.stok_produk
+      harga: req.body.harga,
+      stok: req.body.stok,
+      netto: req.body.netto,
+      kadaluarsa: req.body.kadaluarsa
     }
-    produkModel.update({ harga: req.body.harga }, editedQuery, (error, produk) => {
+    produkModel.update({ nama_produk: req.body.nama_produk }, editedQuery, (error, produk) => {
         if (error !== null) {
           res.json({
             message: error.message
@@ -51,7 +53,7 @@ router.put('/', (req, res) => {
 })
     
 router.delete('/', (req, res) => {
-    produkModel.deleteOne({ harga: req.body.harga }, (error, produk) => {
+    produkModel.deleteOne({ nama_produk: req.body.nama_produk }, (error, produk) => {
         if (error !== null) {
             res.json({
             message: error.message

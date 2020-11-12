@@ -11,7 +11,8 @@ const TokoSchema = new mongoose.Schema({
     },
     email : {
         type: String,
-        required : true
+        required : true,
+        unique:true
     },
     password : {
         type: String,
@@ -23,7 +24,6 @@ const TokoSchema = new mongoose.Schema({
     },
     alamat : {
         type: String,
-        unique: true,
         required: true
     }
 });
