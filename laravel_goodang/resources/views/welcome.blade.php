@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>Laravel</title>
+        <title>Goodang</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -70,16 +70,14 @@
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
-                    <a href="{{ url('/login') }}">Login</a>
-                    <a href="{{ url('/admin_login') }}">Login Admin</a>
-                    <a href="{{ url('/register') }}">Register</a>
-                    <a href="{{ url('/admin_register') }}">Register Admin</a>
+                    <a href="{{ url('/login') }}">Masuk</a>
+                    <a href="{{ url('/register') }}">Daftar</a>
                 </div>
             @endif
 
             <div class="content">
             <div class="container" style="width: 100%; padding: 0px; margin-top: 25%;"> 
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: -25%;margin-left: 0px; margin-right: 0px;">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -88,7 +86,7 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="max-height: 400px !important;">
                 <div class="item active">
                     <img src="img/Carousel1.png" alt="Los Angeles" style="width:100%;">
                 </div>
@@ -113,47 +111,46 @@
             </a>
             </div>
             </div>
-               <div class="card" style="background-color: #FFFFFF;">
-                    <div class="card-heading" ">KATEGORI TOKO</div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="card-deck">
-                            <div class="card ">
-                                <div class="card-body col-md-2">
-                                <img src="{{url('img/sembako.png')}}" style="margin-left:50px" width ="200" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-warning">
-                                <div class="card-body col-md-2">
-                                <img src="{{url('img/tekstil.png')}}" style="margin-left:50px" width ="200" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-success">
-                                <div class="card-body col-md-2">
-                                <img src="{{url('img/Bahan kue.png')}}" style="margin-left:50px" width ="200" alt="">
-                                </div>
-                            </div>
-                            <div class="card bg-success">
-                                <div class="card-body col-md-2 stre">
-                                <img src="{{url('img/otomotif.png')}}" style="margin-left:50px" width ="200" alt="">
-                                </div>
-                            </div>
-                             <div class="card bg-success">
-                                <div class="card-body col-md-2">
-                                <img src="{{url('img/bangunan.png')}}" style="margin-left:50px" width ="200" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        {{-- <div class="card col-md-2" style="background-color: #4bbd89; margin-right: 50px;">
-                                <a href="{{url ('/invoice')}}"><div class="card-body" style="color: #FFFFFF">
-                                Otomotif
-                                </div><a>
-                        </div> --}}
-                    </div>
-                    </div>
+
+        <!-- Button Kategori -->
+        <div class="row" style="padding-left: 5%;padding-top:3%;margin-right:0px; margin-left:0px;">
+            <div class="col-sm-2">
+                <div class="card">
+                <div class="card-body">
+                    <img src="{{url('img/sembako.png')}}" style="margin-left:50px" width ="120" alt="">
+                </div>
                 </div>
             </div>
+        <div class="col-sm-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{url('img/tekstil.png')}}" style="margin-left:50px" width ="120" >  
+                </div>
+             </div>
         </div>
+        <div class="col-sm-2">
+            <div class="card">
+            <div class="card-body">
+                <img src="{{url('img/Bahan kue.png')}}" style="margin-left:50px" width ="120" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+             <div class="card">
+            <div class="card-body">
+                <img src="{{url('img/otomotif.png')}}" style="margin-left:50px" width ="120" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card">
+            <div class="card-body">
+                <img src="{{url('img/bangunan.png')}}" style="margin-left:50px" width ="120" alt="">
+            </div>
+            </div>
+        </div>
+        </div>
+
+
     </body>
 </html>
