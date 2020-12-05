@@ -20,7 +20,7 @@
         ]); ?>
     </script>
 </head>
-<body>
+<body style="background-color: #FFFFFF">
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
@@ -63,6 +63,7 @@
                         @endif
                     </ul>
                 </div>
+                
             </div>
         </nav>
 
