@@ -3,10 +3,16 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login Admin</div>
-                <div class="panel-body">
+       <div class="col-md-6">
+            <div class="col-ml-6 col-ml-offset-6">
+                <img src="{{url('img/Logo.png')}}" style="margin-left:50px" width ="400" alt="">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="col-ml-6 col-ml-offset-6">
+                <div class="card" style="background-color: #E4CEA3;">
+                    <div class="card-heading">Login</div>
+                    <div class="card-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/admin_login') }}">
                         {{ csrf_field() }}
 
@@ -50,7 +56,7 @@
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" style="background-color: #003049; color: #FFFFFF">
                                     Login
                                 </button>
 

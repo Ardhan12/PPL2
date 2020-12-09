@@ -1,18 +1,18 @@
 @extends('layouts.app')
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 @section('content')
 <div class="container">
     <div class="row">
-               <div class="col-md-4">
+        <div class="col-md-4">
          <div class="col-ml-6 col-ml-offset-6">
                 <div class="card card-standard">
                     <div class="card-body">
-                        <a class="" href="{{ url('/home') }}"> Dashboard </a>
+                        <a class="" href="{{ url('/home') }}"> Back </a>
                         <br>
-                        <a class=" " href="{{ url('/home') }}"> Manage Adminn </a>
+                        <a class=" " href="{{ url('/home') }}"> Edit Profile </a>
                         <br>
-                        <a class=" " href="{{ url('/home') }}"> Manage Store </a>
-                      
+                        <a class=" " href="{{ url('/home') }}"> Logout </a>
+                     
                     </div>
                 </div>
             </div>
@@ -26,13 +26,13 @@
                     <div class="col-md-6">Dashboard</div>
                         <div class="card-body">
                         <div class="card">
-                            <div class="card-header">Store Details</div>
+                            <div class="card-header">Product Details</div>
                                 <div class="card-body">
                                 </div>
                             </div>
                         <br>
                         <div class="card">
-                            <div class="card-header">Admin Details</div>
+                            <div class="card-header">Inventory Details</div>
                                 <div class="card-body">
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>   
     </div>
 </div>
 @endsection

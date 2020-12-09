@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
+
+@section('content')
 @section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-6">
             <div class="col-ml-6 col-ml-offset-6">
-                <img src="{{url('img/Logo.png')}}" style="margin-left:50px" width ="500" alt="">
+                <img src="{{url('img/Logo.png')}}" style="margin-left:50px" width ="400" alt="">
             </div>
         </div>
         <div class="col-md-6">

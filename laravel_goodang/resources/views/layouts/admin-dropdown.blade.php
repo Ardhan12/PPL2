@@ -1,15 +1,21 @@
  <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                <a href="#" class="" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::guard('admin_user')->user()->name }} <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        {{-- <a href="{{ url('/admin_logout') }}" --}}
                                         <a href="{{ url('/admin_logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout
                                         </a>
+
+                                        <a href="{{url('/admin_profile')}}">
+                                        Profile</a>
+                                        <a href="{{url('/admin-home')}}">
+                                        Dashboard</a>
 
                                         <form id="logout-form" action="{{ url('/admin_logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}

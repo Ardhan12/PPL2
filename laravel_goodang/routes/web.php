@@ -27,4 +27,6 @@ Route::get  ('admin_register','AdminAuth\RegisterController@showRegistrationForm
 Route::post ('admin_register','AdminAuth\RegisterController@register');
 
 Route::get('/home', 'HomeController@index');
+Route::get('/profile', 'ProfilController@index');
+Route::get('/admin_profile', 'AdminProfileController@index');
 Route::get('/admin-home', 'AdminHomeController@index');
